@@ -24,17 +24,22 @@
 }
 
 .home {
-  height: 100vh;
+  padding: 40px;
   display: flex;
-  background-color: grey;
+  flex-flow: column;
+  background-color: white;
   align-items: center;
   justify-content: center;
   color: rgb(8, 11, 216);
+  h3,
+  article {
+    padding: 20px;
+  }
 }
 .albums {
   height: 100vh;
   display: flex;
-  background-color: grey;
+  background-color: white;
   align-items: center;
   justify-content: center;
   color: rgb(8, 11, 216);
@@ -46,7 +51,7 @@
 .songs {
   height: 100vh;
   display: flex;
-  background-color: grey;
+  background-color: white;
   align-items: center;
   justify-content: center;
   color: rgb(8, 11, 216);
@@ -59,7 +64,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: white;
   align-items: center;
   justify-content: center;
   color: rgb(8, 11, 216);
