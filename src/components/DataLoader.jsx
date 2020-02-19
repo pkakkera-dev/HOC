@@ -4,24 +4,15 @@ const DataLoader = props => WrappedComponent => {
   class HOC extends React.Component {
     state = {
       data: {},
-      loading: false
+      loading: true
     };
 
     componentDidMount() {
-      console.log("componentDidMount");
-
-      this.setState({
-        loading: true
-      });
       this.fetchData(props.dataType);
     }
 
     fetchData(dataType) {
-      //console.log("fetch start");
       try {
-        // let header = new Headers({
-        //   "Access-Control-Allow-Origin": "*"
-        // });
         let baseURL = "https://jsonplaceholder.typicode.com/" + dataType;
         fetch(baseURL)
           .then(res => res.json())
